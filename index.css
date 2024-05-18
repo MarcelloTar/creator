@@ -1,0 +1,65 @@
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-direction: column;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.orange{
+    color: orange;
+    animation: move infinite 2s;
+    transition: 0.1s;
+}
+h1{
+    font-size: 120px;
+    color: #fff;
+    animation: show 1 3s;
+    position: relative;
+}
+p{
+    color: #999;
+    font-size: 36px;
+    font-weight: 100;
+    animation: showslogan 1 3s;
+    position: relative;
+    transition: 1s;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes show{
+    0%{
+        top: -900px;
+        opacity: 0;
+    }
+    50%{
+        top: 30px;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes showslogan{
+ 0%{
+    top: 50px;
+ }
+ 100%{
+    top: 0;
+ }
+}
